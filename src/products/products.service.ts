@@ -70,7 +70,7 @@ export class ProductsService {
   }
 
   async update(id: string, updateProductDto: UpdateProductDto) {
-    const product = await this.productRepository.preload({
+    const product = await this.productRepository.preload({  // preload: Actualiza
       id,
       ...updateProductDto,
     });
