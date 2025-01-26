@@ -14,7 +14,7 @@
 # Clonar el repositorio para editar.
 -Clonar el repositorio y asignamos al nuevo repo ya creado en git
 ```bash
-#Recordar cambiar el nombre del proyecto en package.json
+#Recordar cambiar el nombre del proyecto en package.json y en los .evn.xxx
 
 git clone https://github.com/martinprado1000/nest-04-ecommerce.git nuevoNombre
 
@@ -32,9 +32,14 @@ npm i -g @nest/cli
 
 ```bash
 docker-compose up -d
+#Para Postgres recordar crear la base de datos a mono porque no la crea sola
 ```
 
-4. Renombrar el archivo __.env.template__ por __.env__ y llenar las variables de entorno.
+4. Renombrar el archivo __.env.template__ por __.env__ y llenar las variables de entorno e instalar las dependencias:
+```bash
+#Instalar dependencias
+npm install
+```
 
 5. Ejecutar en desarrollo
 ```bash
